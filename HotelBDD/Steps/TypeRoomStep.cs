@@ -65,6 +65,9 @@ namespace HotelBDD.Steps
         [When(@"obter o TypeRoom")]
         public void QuandoObterOTipoDeQuarto() => BedroomType();
 
+        [When(@"obter todos os TypeRoom")]
+        public void ObterTodostipoDeQuarto() => GetAllTypeRoom();
+
 
         [Then(@"a resposta do TypeRoom será (.*)")]
         public void EntaoARespostaSera(HttpStatusCode statusCode) => Assert.Equal(statusCode, _restResponse.StatusCode);
@@ -81,6 +84,14 @@ namespace HotelBDD.Steps
             }
             else if (_restRequest.Method == Method.POST)
                 _restRequest.AddJsonBody(new { Description = _description, Value = _value });
+
+            _restClient.BaseUrl = new Uri(_host);
+            _restResponse = _restClient.Execute(_restRequest);
+        }
+
+        public void GetAllTypeRoom()
+        {
+            _restRequest.AddHeader("Content-Type", "application/json");
 
             _restClient.BaseUrl = new Uri(_host);
             _restResponse = _restClient.Execute(_restRequest);

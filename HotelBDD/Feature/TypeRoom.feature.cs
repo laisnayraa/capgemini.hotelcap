@@ -118,7 +118,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("que a description é Stand", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 8
- testRunner.And("que o value é 500.00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o value é 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 9
  testRunner.When("obter o TypeRoom", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -130,14 +130,14 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Listar todos os TypeRoom")]
+        [Xunit.SkippableFactAttribute(DisplayName="Listar TypeRoom por Id")]
         [Xunit.TraitAttribute("FeatureTitle", "TypeRoom")]
-        [Xunit.TraitAttribute("Description", "Listar todos os TypeRoom")]
-        public virtual void ListarTodosOsTypeRoom()
+        [Xunit.TraitAttribute("Description", "Listar TypeRoom por Id")]
+        public virtual void ListarTypeRoomPorId()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Listar todos os TypeRoom", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Listar TypeRoom por Id", null, tagsOfScenario, argumentsOfScenario);
 #line 13
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -159,30 +159,33 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 14
- testRunner.Given("que o endpoint do TypeRoom é \'TypeRoom/GetAll\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+ testRunner.Given("que o endpoint do TypeRoom é \'TypeRoom/GetById\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 15
  testRunner.And("que o método http do TypeRoom é \'GET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 16
- testRunner.When("obter o TypeRoom", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.And("que o id do TypeRoom é 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 17
+ testRunner.When("obter o TypeRoom", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 18
  testRunner.Then("a resposta do TypeRoom será 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Listar TypeRoom por Id")]
+        [Xunit.SkippableFactAttribute(DisplayName="Listar todos os TypeRoom")]
         [Xunit.TraitAttribute("FeatureTitle", "TypeRoom")]
-        [Xunit.TraitAttribute("Description", "Listar TypeRoom por Id")]
-        public virtual void ListarTypeRoomPorId()
+        [Xunit.TraitAttribute("Description", "Listar todos os TypeRoom")]
+        public virtual void ListarTodosOsTypeRoom()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Listar TypeRoom por Id", null, tagsOfScenario, argumentsOfScenario);
-#line 20
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Listar todos os TypeRoom", null, tagsOfScenario, argumentsOfScenario);
+#line 21
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -202,17 +205,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 21
- testRunner.Given("que o endpoint do TypeRoom é \'TypeRoom/GetById\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
 #line 22
- testRunner.And("que o método http do TypeRoom é \'GET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.Given("que o endpoint do TypeRoom é \'TypeRoom/GetAll\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 23
- testRunner.And("que o id do TypeRoom é 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o método http do TypeRoom é \'GET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 24
- testRunner.When("obter o TypeRoom", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.When("obter todos os TypeRoom", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 25
  testRunner.Then("a resposta do TypeRoom será 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");

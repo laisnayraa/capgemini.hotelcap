@@ -16,7 +16,8 @@ namespace HotelTDD.Services.Occupation
 
         public void Create(OccupationCreateRequest request)
         {
-            Occupations occupations = new Occupations(request.DailyAmount, request.Date, request.ClientId, request.RoomId, request.Situation);
+            Occupations occupations = new Occupations(request.DailyAmount, request.Date, request.ClientId, request.RoomId);
+            occupations.Situation = "N";
             _occupationRepository.Create(occupations);
         }
     }

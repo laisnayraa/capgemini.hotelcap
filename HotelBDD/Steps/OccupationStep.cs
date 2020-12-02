@@ -17,7 +17,6 @@ namespace HotelBDD.Steps
         private IObjectContainer _objectContainer;
         private int _dailyAmount;
         private DateTime _date;
-        private string _situation;
         private int _clientId;
         private int _roomId;
 
@@ -62,9 +61,6 @@ namespace HotelBDD.Steps
         [Given(@"que o date é (.*)")]
         public void DadoQueADataDaOcupacaoEh(DateTime date) => _date = date;
 
-        [Given(@"que o situation é (.*)")]
-        public void DadoQueASituacaoDaOcupacaoEh(string situation) => _situation = situation;
-
         [Given(@"que o client id é (.*)")]
         public void DadoQueOIdDoClienteDaOcupacaoEh(int clientId) => _clientId = clientId;
 
@@ -88,8 +84,7 @@ namespace HotelBDD.Steps
                 DailyAmount = _dailyAmount,
                 Date = _date,
                 ClientId = _clientId,
-                RoomId = _roomId,
-                Situation = _situation
+                RoomId = _roomId
             });
 
             _restClient.BaseUrl = new Uri(_host);

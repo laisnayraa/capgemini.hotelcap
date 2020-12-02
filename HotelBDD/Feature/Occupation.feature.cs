@@ -121,18 +121,15 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("que o date é 2020-12-02T14:03:55.983Z", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 10
- testRunner.And("que o situation é N", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 11
  testRunner.And("que o client id é 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 12
+#line 11
  testRunner.And("que o room Id é 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 13
+#line 12
  testRunner.When("obter o occupation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 14
+#line 13
  testRunner.Then("a resposta será 201", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }

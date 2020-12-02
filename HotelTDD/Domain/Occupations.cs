@@ -6,7 +6,7 @@ namespace HotelTDD.Domain
 {
     public class Occupations : DomainBase
     {
-        public Occupations(int dailyAmount, DateTime date, int clientId, int roomId, string situation)
+        public Occupations(int dailyAmount, DateTime date, int clientId, int roomId)
         {
             RolesValidator.New()
                 .When(dailyAmount <= 0, "Número de diária inválida.")
@@ -18,7 +18,6 @@ namespace HotelTDD.Domain
             Date = date;
             ClientId = clientId;
             RoomId = roomId;
-            Situation = "N";
         }
 
         public int DailyAmount { get; set; }
