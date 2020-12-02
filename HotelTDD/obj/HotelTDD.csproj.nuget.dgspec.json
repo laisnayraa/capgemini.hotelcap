@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj": {}
+    "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj": {}
   },
   "projects": {
-    "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj": {
+    "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj",
+        "projectUniqueName": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj",
         "projectName": "HotelTDD",
-        "projectPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj",
+        "projectPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj",
         "packagesPath": "C:\\Users\\laisanto\\.nuget\\packages\\",
-        "outputPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTDD\\obj\\",
+        "outputPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTDD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

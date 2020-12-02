@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kxP0vMGzcqod+kKqmJb+A9e57l68SH+XuN63qzKJLbQC+jKUtv7mlhORpRv2/aaFRU/OtjuNI0cApojq/rWjdQ==",
+  "dgSpecHash": "enunX6PIu4szvCkhgfUyH1/sbLkUbYhA3sLv4uVdlVtPzElxuaYUCnw8mBsSsyK0FD88+2dGd1bfTbRxeVYX3Q==",
   "success": true,
-  "projectFilePath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj",
+  "projectFilePath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laisanto\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\laisanto\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

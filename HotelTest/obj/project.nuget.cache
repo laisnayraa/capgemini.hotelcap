@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gvriKXkY3jzeDaRNh7rH4U+z0DlWNN93mLZ2oah8i7SvjUSdkk8w1xH7KebOBWnJ8ZEvsLDepTjwkqd3toDdUA==",
+  "dgSpecHash": "YH9cwOMk9tvOmF8ZB9F8YSD8vPlky4me+c8QXguj+dUZkIyi2rVPN/mPleO1ehasya5O2tIOcjkeWIUO93lrjg==",
   "success": true,
-  "projectFilePath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTest\\HotelTest.csproj",
+  "projectFilePath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTest\\HotelTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laisanto\\.nuget\\packages\\autofixture\\4.14.0\\autofixture.4.14.0.nupkg.sha512",
     "C:\\Users\\laisanto\\.nuget\\packages\\bogus\\32.0.1\\bogus.32.0.1.nupkg.sha512",

@@ -6463,11 +6463,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelBDD\\HotelBDD.csproj",
+      "projectUniqueName": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelBDD\\HotelBDD.csproj",
       "projectName": "HotelBDD",
-      "projectPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelBDD\\HotelBDD.csproj",
+      "projectPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelBDD\\HotelBDD.csproj",
       "packagesPath": "C:\\Users\\laisanto\\.nuget\\packages\\",
-      "outputPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelBDD\\obj\\",
+      "outputPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelBDD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

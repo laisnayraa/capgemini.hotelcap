@@ -74,9 +74,12 @@ namespace HotelBDD.Steps
         {
             _restRequest.AddHeader("Content-Type", "application/json");
 
-             if (_id != 0)
+            if (_restRequest.Method == Method.GET)
+            {
+                if (_id != 0)
                     _restRequest.AddParameter("id", _id);
-            else 
+            }
+            else if (_restRequest.Method == Method.POST)
                 _restRequest.AddJsonBody(new { Description = _description, Value = _value });
 
             _restClient.BaseUrl = new Uri(_host);

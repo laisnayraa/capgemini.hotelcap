@@ -8556,11 +8556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTest\\HotelTest.csproj",
+      "projectUniqueName": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTest\\HotelTest.csproj",
       "projectName": "HotelTest",
-      "projectPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTest\\HotelTest.csproj",
+      "projectPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTest\\HotelTest.csproj",
       "packagesPath": "C:\\Users\\laisanto\\.nuget\\packages\\",
-      "outputPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTest\\obj\\",
+      "outputPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8579,8 +8579,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj": {
-              "projectPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap-capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj"
+            "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj": {
+              "projectPath": "C:\\cursos\\Curso_DotNET_Capgemini\\capgemini.hotelcap\\HotelTDD\\HotelTDD.csproj"
             }
           }
         }
