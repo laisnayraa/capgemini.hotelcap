@@ -35,10 +35,10 @@ namespace HotelBDD.Steps
             _restClient.RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true;
         }
 
-        [Given(@"que o endpoint é '(.*)'")]
+        [Given(@"que o endpoint da Occupation é '(.*)'")]
         public void DadoQueAUrlDoEndPointEh(string endpoint) => _restRequest.Resource = endpoint;
 
-        [Given(@"que o método http é '(.*)'")]
+        [Given(@"que o método http da Occupation é '(.*)'")]
         public void DadoQueOMetodoHttpEh(string metodo)
         {
             if (metodo.ToUpper() == "GET")
@@ -56,7 +56,7 @@ namespace HotelBDD.Steps
 
 
         [Given(@"que o dailyAmount é (.*)")]
-        public void DadoQueAQtdeDiarysDaOcupacaoEh(int dailyAmount) => _dailyAmount = dailyAmount;
+        public void DadoQueAQtdeDiariasDaOcupacaoEh(int dailyAmount) => _dailyAmount = dailyAmount;
 
         [Given(@"que o date é (.*)")]
         public void DadoQueADataDaOcupacaoEh(DateTime date) => _date = date;
@@ -71,7 +71,7 @@ namespace HotelBDD.Steps
         public void QuandoObterAOcupacao() => Occupation();
 
 
-        [Then(@"a resposta será (.*)")]
+        [Then(@"a resposta da Occupation será (.*)")]
         public void EntaoARespostaSera(HttpStatusCode statusCode) => Assert.Equal(statusCode, _restResponse.StatusCode);
 
 

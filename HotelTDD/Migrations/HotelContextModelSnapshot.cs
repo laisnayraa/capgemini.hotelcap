@@ -19,7 +19,7 @@ namespace HotelTDD.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("HotelTDD.Domain.Client", b =>
+            modelBuilder.Entity("HotelTDD.Domain.Clients", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -44,7 +44,7 @@ namespace HotelTDD.Migrations
                     b.ToTable("Clients");
                 });
 
-            modelBuilder.Entity("HotelTDD.Domain.Occupation", b =>
+            modelBuilder.Entity("HotelTDD.Domain.Occupations", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -107,7 +107,7 @@ namespace HotelTDD.Migrations
                     b.ToTable("Rooms");
                 });
 
-            modelBuilder.Entity("HotelTDD.Domain.TypeRoom", b =>
+            modelBuilder.Entity("HotelTDD.Domain.TypeRooms", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -127,9 +127,39 @@ namespace HotelTDD.Migrations
                     b.ToTable("TypeRooms");
                 });
 
-            modelBuilder.Entity("HotelTDD.Domain.Occupation", b =>
+            modelBuilder.Entity("HotelTDD.Domain.Users", b =>
                 {
-                    b.HasOne("HotelTDD.Domain.Client", "Client")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("HotelTDD.Domain.Occupations", b =>
+                {
+                    b.HasOne("HotelTDD.Domain.Clients", "Client")
                         .WithMany()
                         .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -148,7 +178,7 @@ namespace HotelTDD.Migrations
 
             modelBuilder.Entity("HotelTDD.Domain.Rooms", b =>
                 {
-                    b.HasOne("HotelTDD.Domain.TypeRoom", "TypeRoom")
+                    b.HasOne("HotelTDD.Domain.TypeRooms", "TypeRoom")
                         .WithMany()
                         .HasForeignKey("TypeRoomId")
                         .OnDelete(DeleteBehavior.Cascade)

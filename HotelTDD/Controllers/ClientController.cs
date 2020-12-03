@@ -1,5 +1,6 @@
 ﻿using HotelTDD.Services.Client.Request;
 using HotelTDD.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -17,6 +18,7 @@ namespace HotelTDD.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult Create([FromBody] ClientCreateRequest request)
         {
             try
@@ -35,6 +37,7 @@ namespace HotelTDD.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult GetById([FromQuery] int id)
         {
             try

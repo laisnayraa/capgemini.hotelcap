@@ -1,6 +1,7 @@
 ﻿using HotelTDD.Services.Interface;
 using HotelTDD.Services.Room.Request;
 using HotelTDD.Services.Room.Response;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace HotelTDD.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult Create([FromBody] RoomCreateRequest request)
         {
             try
@@ -37,6 +39,7 @@ namespace HotelTDD.Controllers
         }
 
         [HttpPatch]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult Update([FromBody] RoomUpdateRequest request)
         {
             try
@@ -55,6 +58,7 @@ namespace HotelTDD.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult GetById([FromQuery] int roomId)
         {
             try
@@ -68,11 +72,12 @@ namespace HotelTDD.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Não foi possivel encontrar o quarto: {ex}");
+                return NotFound($"Não foi possivel encontrar o quarto: {ex}");
             }
         }
 
         [HttpGet]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult GetByTypeRoomId([FromQuery] int typeRoomId)
         {
             try

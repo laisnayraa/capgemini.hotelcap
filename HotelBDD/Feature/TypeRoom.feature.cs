@@ -165,7 +165,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("que o método http do TypeRoom é \'GET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 16
- testRunner.And("que o id do TypeRoom é 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o id do TypeRoom é 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 17
  testRunner.When("obter o TypeRoom", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");

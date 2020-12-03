@@ -13,7 +13,7 @@ Esquema do Cenario: Inserir TypeRoom
 	Esquema do Cenario: Listar TypeRoom por Id
 	Dado que o endpoint do TypeRoom é 'TypeRoom/GetById'
 	E que o método http do TypeRoom é 'GET'
-	E que o id do TypeRoom é 1
+	E que o id do TypeRoom é 2
 	Quando obter o TypeRoom
 	Então a resposta do TypeRoom será 200
 

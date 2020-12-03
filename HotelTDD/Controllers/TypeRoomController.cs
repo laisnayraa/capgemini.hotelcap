@@ -1,6 +1,7 @@
 ﻿using HotelTDD.Services.Interface;
 using HotelTDD.Services.TypeRoom.Request;
 using HotelTDD.Services.TypeRoom.Response;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,8 @@ namespace HotelTDD.Controllers
             _typeRoomService = typeRoomService;
         }
 
-        [HttpPost] 
+        [HttpPost]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult Create([FromBody] TypeRoomCreateRequest request)
         {
             try
@@ -38,6 +40,7 @@ namespace HotelTDD.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult GetById([FromQuery] int id)
         {
             try
@@ -57,6 +60,7 @@ namespace HotelTDD.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult GetAll()
         {
             try

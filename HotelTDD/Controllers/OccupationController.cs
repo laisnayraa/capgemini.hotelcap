@@ -1,5 +1,6 @@
 ﻿using HotelTDD.Services.Interface;
 using HotelTDD.Services.Occupation.Request;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -17,6 +18,7 @@ namespace HotelTDD.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADM,USER")]
         public IActionResult Create([FromBody] OccupationCreateRequest request)
         {
             try

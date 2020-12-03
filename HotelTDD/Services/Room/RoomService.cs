@@ -32,7 +32,10 @@ namespace HotelTDD.Services.Room
         {
             Rooms rooms = _roomRepository.GetById(roomId);
 
-            return new RoomListResponse() { BuildingFloor = rooms.BuildingFloor, RoomNum = rooms.RoomNum, Situation = rooms.Situation, TypeRoomId = rooms.TypeRoomId };
+            if (rooms != null)
+                return new RoomListResponse() { BuildingFloor = rooms.BuildingFloor, RoomNum = rooms.RoomNum, Situation = rooms.Situation, TypeRoomId = rooms.TypeRoomId };
+            else
+                throw new System.Exception();
         }
 
         public IEnumerable<RoomListResponse> GetByTypeRoomId(int typeRoomId)

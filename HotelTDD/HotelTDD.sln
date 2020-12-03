@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - API", "1 - API", "{F795A9AE-DB03-4668-ABEC-2A8162758383}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelTDD", "..\HotelTDD\HotelTDD.csproj", "{D992BDD5-115B-4C52-B2B9-4A31E0F18520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelTDD", "HotelTDD.csproj", "{D992BDD5-115B-4C52-B2B9-4A31E0F18520}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Tests", "2 - Tests", "{48151226-D9A6-4303-9089-A26B02030690}"
 EndProject
@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelTest", "..\HotelTest\H
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - IntegratedTest", "3 - IntegratedTest", "{38E3A760-092F-489C-A291-82FCBD02DA22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelBDD", "..\HotelBDD\HotelBDD.csproj", "{464ABB44-7069-4AD3-B0CC-A9CE5D9A4D80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelBDD", "..\HotelBDD\HotelBDD.csproj", "{464ABB44-7069-4AD3-B0CC-A9CE5D9A4D80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

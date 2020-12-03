@@ -10,6 +10,7 @@ namespace HotelTDD.Infra.Context
         public DbSet<Occupations> Occupation { get; set; }
         public DbSet<Rooms> Rooms { get; set; }
         public DbSet<TypeRooms> TypeRoom { get; set; }
+        public DbSet<Users> User { get; set; }
         public HotelContext(DbContextOptions options) : base(options)
         {
         }
@@ -20,6 +21,7 @@ namespace HotelTDD.Infra.Context
             modelBuilder.ApplyConfiguration(new OccupationConfiguration());
             modelBuilder.ApplyConfiguration(new RoomConfiguration());
             modelBuilder.ApplyConfiguration(new TypeRoomConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

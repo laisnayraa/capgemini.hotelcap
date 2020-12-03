@@ -34,10 +34,10 @@ namespace HotelBDD.Steps
             _restClient.RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true;
         }
 
-        [Given(@"que o endpoint do Client é '(.*)'")]
+        [Given(@"que o endpoint do Cliente é '(.*)'")]
         public void DadoQueAUrlDoEndPointEh(string endpoint) => _restRequest.Resource = endpoint;
 
-        [Given(@"que o método http do Client é '(.*)'")]
+        [Given(@"que o método http do Cliente é '(.*)'")]
         public void DadoQueOMetodoHttpEh(string metodo)
         {
             if (metodo.ToUpper() == "GET")
@@ -54,7 +54,7 @@ namespace HotelBDD.Steps
         }
 
 
-        [Given(@"que o id é (.*)")]
+        [Given(@"que o id do Cliente é (.*)")]
         public void DadoQueOIdDoClienteEh(int id) => _id = id;
 
         [Given(@"que o name é (.*)")]
@@ -70,17 +70,17 @@ namespace HotelBDD.Steps
         public void QuandoObterOCliente() => Client();
 
 
-        [Then(@"a resposta do Client será (.*)")]
+        [Then(@"a resposta do Cliente será (.*)")]
         public void EntaoARespostaSera(HttpStatusCode statusCode) => Assert.Equal(statusCode, _restResponse.StatusCode);
 
 
         public void Client()
         {
             _restRequest.AddHeader("Content-Type", "application/json");
-                
+
             if (_id != 0)
-                    _restRequest.AddParameter("id", _id);
-            else 
+                _restRequest.AddParameter("id", _id);
+            else
                 _restRequest.AddJsonBody(new { Name = _name, CPF = _cpf, Hashs = _hashs });
 
             _restClient.BaseUrl = new Uri(_host);

@@ -115,13 +115,13 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("que o método http do Client é \'POST\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 7
- testRunner.And("que o name é \"Maria\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o name é Maria", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 8
- testRunner.And("que o CPF é \'999.999.999-99\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o CPF é 999.999.999-99", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 9
- testRunner.And("que o hashs é \'OSE3LOCE\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o hashs é OSE3LOCE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 10
  testRunner.When("obter o client", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
