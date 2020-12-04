@@ -212,7 +212,6 @@ C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelBDD\bin\Debug\netcoreap
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelBDD\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelBDD\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelBDD\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelBDD\obj\Debug\netcoreapp3.1\HotelBDD.csprojAssemblyReference.cache
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelBDD\obj\Debug\netcoreapp3.1\HotelBDD.AssemblyInfoInputs.cache
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelBDD\obj\Debug\netcoreapp3.1\HotelBDD.AssemblyInfo.cs
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelBDD\obj\Debug\netcoreapp3.1\HotelBDD.csproj.CoreCompileInputs.cache

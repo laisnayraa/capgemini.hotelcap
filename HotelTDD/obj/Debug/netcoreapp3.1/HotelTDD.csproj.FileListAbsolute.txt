@@ -208,4 +208,3 @@ C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTDD\obj\Debug\netcoreap
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTDD\obj\Debug\netcoreapp3.1\HotelTDD.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTDD\obj\Debug\netcoreapp3.1\HotelTDD.pdb
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTDD\obj\Debug\netcoreapp3.1\HotelTDD.genruntimeconfig.cache
-C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTDD\obj\Debug\netcoreapp3.1\HotelTDD.csprojAssemblyReference.cache
