@@ -2,10 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerUI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace HotelTDD.Configuration
 {
@@ -21,10 +17,6 @@ namespace HotelTDD.Configuration
                     Title = "Hotel Cap V1",
                     Description = "HotelCap V1"
                 });
-
-                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //swagger.IncludeXmlComments(xmlPath);
 
                 swagger.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {

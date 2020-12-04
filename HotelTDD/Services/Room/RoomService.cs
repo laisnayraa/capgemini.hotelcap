@@ -3,6 +3,7 @@ using HotelTDD.Domain.Interface;
 using HotelTDD.Services.Interface;
 using HotelTDD.Services.Room.Request;
 using HotelTDD.Services.Room.Response;
+using System;
 using System.Collections.Generic;
 
 namespace HotelTDD.Services.Room
@@ -35,7 +36,7 @@ namespace HotelTDD.Services.Room
             if (rooms != null)
                 return new RoomListResponse() { BuildingFloor = rooms.BuildingFloor, RoomNum = rooms.RoomNum, Situation = rooms.Situation, TypeRoomId = rooms.TypeRoomId };
             else
-                throw new System.Exception();
+                throw new ArgumentNullException("rooms", "Não foi encontrado nenhum quarto com esse Id");
         }
 
         public IEnumerable<RoomListResponse> GetByTypeRoomId(int typeRoomId)

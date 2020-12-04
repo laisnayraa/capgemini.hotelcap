@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace HotelTDD.Configuration
+﻿namespace HotelTDD.Configuration
 {
     public static class Settings
     {
-        public static string Secret = "fedaf7d8863b48e197b9287d492b708e";
+        public static readonly string Secret = "fedaf7d8863b48e197b9287d492b708e";
     }
 }

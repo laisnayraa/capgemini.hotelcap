@@ -323,6 +323,7 @@ C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcorea
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcoreapp3.1\ExpectedObjects.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcoreapp3.1\Fare.dll
+C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -458,4 +459,3 @@ C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\obj\Debug\netcorea
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\obj\Debug\netcoreapp3.1\HotelTest.dll
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\obj\Debug\netcoreapp3.1\HotelTest.pdb
 C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\obj\Debug\netcoreapp3.1\HotelTest.genruntimeconfig.cache
-C:\cursos\Curso_DotNET_Capgemini\capgemini.hotelcap\HotelTest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

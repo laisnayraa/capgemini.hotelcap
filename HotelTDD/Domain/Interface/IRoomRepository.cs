@@ -1,5 +1,4 @@
-﻿using HotelTDD.Services.Room.Request;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace HotelTDD.Domain.Interface
 {

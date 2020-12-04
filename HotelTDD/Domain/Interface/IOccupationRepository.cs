@@ -1,6 +1,4 @@
-﻿using HotelTDD.Services.Occupation.Request;
-
-namespace HotelTDD.Domain.Interface
+﻿namespace HotelTDD.Domain.Interface
 {
     public interface IOccupationRepository
     {

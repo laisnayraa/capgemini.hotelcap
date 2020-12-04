@@ -1,6 +1,5 @@
 ﻿using HotelTDD.Services.Client.Request;
 using HotelTDD.Services.Client.Response;
-using System.Collections.Generic;
 
 namespace HotelTDD.Services.Interface
 {

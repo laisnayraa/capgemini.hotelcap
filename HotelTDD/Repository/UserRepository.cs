@@ -4,10 +4,7 @@ using HotelTDD.Repository.Core;
 using HotelTDD.Services.User.Request;
 using HotelTDD.Services.User.Response;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace HotelTDD.Repository
 {

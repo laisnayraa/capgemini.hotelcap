@@ -83,8 +83,8 @@ namespace HotelBDD.Feature
         [Xunit.SkippableTheoryAttribute(DisplayName="Obter Room inexistente ou existente")]
         [Xunit.TraitAttribute("FeatureTitle", "Room")]
         [Xunit.TraitAttribute("Description", "Obter Room inexistente ou existente")]
-        [Xunit.InlineDataAttribute("1", "200", new string[0])]
-        [Xunit.InlineDataAttribute("2", "404", new string[0])]
+        [Xunit.InlineDataAttribute("3", "200", new string[0])]
+        [Xunit.InlineDataAttribute("1", "404", new string[0])]
         public virtual void ObterRoomInexistenteOuExistente(string id, string resposta, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -113,19 +113,19 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 5
- testRunner.Given("que o endpoint é \'Room/GetById\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+ testRunner.Given("que o endpoint do Room é \'Room/GetById\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 6
- testRunner.And("que o método http é \'GET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o método http do Room é \'GET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 7
- testRunner.And("que o id é 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o id é 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 8
  testRunner.When("obter o Room", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 9
- testRunner.Then(string.Format("a resposta será {0}", resposta), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+ testRunner.Then(string.Format("a resposta do Room será {0}", resposta), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -160,10 +160,10 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 17
- testRunner.Given("que o endpoint é \'Room/GetByTypeRoomId\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+ testRunner.Given("que o endpoint do Room é \'Room/GetByTypeRoomId\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 18
- testRunner.And("que o método http é \'GET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o método http do Room é \'GET\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 19
  testRunner.And("que o id é 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -172,7 +172,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("obter o Room", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 21
- testRunner.Then("a resposta será 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+ testRunner.Then("a resposta do Room será 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -207,10 +207,10 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 24
- testRunner.Given("que o endpoint é \'Room/Create\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+ testRunner.Given("que o endpoint do Room é \'Room/Create\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 25
- testRunner.And("que o método http é \'POST\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o método http do Room é \'POST\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 26
  testRunner.And("que o andar é 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -222,13 +222,13 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("que a situation é I", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 29
- testRunner.And("que o TypeRoom é 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o TypeRoom é 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 30
  testRunner.When("criar o Room", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 31
- testRunner.Then("a resposta será 201", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+ testRunner.Then("a resposta do Room será 201", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -263,22 +263,22 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 34
- testRunner.Given("que o endpoint é \'Room/Update\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+ testRunner.Given("que o endpoint do Room é \'Room/Update\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 35
- testRunner.And("que o método http é \'PATCH\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o método http do Room é \'PATCH\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 36
- testRunner.And("que o id é 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que o id é 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 37
- testRunner.And("que o situação é D", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("que a situation é D", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 38
  testRunner.When("atualizar o Room", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 39
- testRunner.Then("a resposta será 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+ testRunner.Then("a resposta do Room será 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();

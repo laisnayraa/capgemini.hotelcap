@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
@@ -23,9 +21,9 @@ namespace HotelTDD.Services.User
             _repository = repository;
         }
 
-        public UserLoginResponse Login(UserLoginRequest request)
+        public UserLoginResponse Login(UserLoginRequest user)
         {
-            var result = _repository.GetUser(request);
+            var result = _repository.GetUser(user);
 
             if (result != null)
             {
@@ -35,19 +33,18 @@ namespace HotelTDD.Services.User
                 return result;
             }
             else
-                throw new Exception("Login incorreto");
+                throw new ArgumentNullException("result", "Login incorreto");
         }
 
-        public void CreateUser(UserCreateRequest request)
+        public void CreateUser(UserCreateRequest user)
         {
-            var result = ValidateUser(request);
+            var result = ValidateUser(user);
 
             if (result)
             {
-                var user = new Users(request.Name, request.Email, request.Password, request.Role);
-                _repository.CreateUser(user);
+                var newUser = new Users(user.Name, user.Email, user.Password, user.Role);
+                _repository.CreateUser(newUser);
             }
-                //_repository.CreateUser(request);
         }
 
         public string GenerateToken(UserLoginResponse user)
@@ -73,13 +70,13 @@ namespace HotelTDD.Services.User
         private bool ValidateUser(UserCreateRequest user)
         {
             if (string.IsNullOrEmpty(user.Name))
-                throw new Exception("Insira o nome de usuário");
+                throw new ArgumentNullException("user.Name", "Insira o nome de usuário");
             else if (string.IsNullOrEmpty(user.Email))
-                throw new Exception("Insira o e-mail");
+                throw new ArgumentNullException("user.Email", "Insira o e-mail");
             else if (string.IsNullOrEmpty(user.Password))
-                throw new Exception("Insira a senha");
+                throw new ArgumentNullException("user.Password", "Insira a senha");
             else if (string.IsNullOrEmpty(user.Role))
-                throw new Exception("Insira o perfil do usuário");
+                throw new ArgumentNullException("user.Role", "Insira o perfil do usuário");
             else
                 return true;
         }

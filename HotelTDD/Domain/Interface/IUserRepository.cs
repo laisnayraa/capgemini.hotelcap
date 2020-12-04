@@ -5,7 +5,6 @@ namespace HotelTDD.Domain.Interface
 {
     public interface IUserRepository
     {
-        //void CreateUser(UserCreateRequest user);
         UserLoginResponse GetUser(UserLoginRequest user);
         void CreateUser(Users user);
     }
